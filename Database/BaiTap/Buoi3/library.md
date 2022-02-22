@@ -230,7 +230,9 @@ INSERT INTO `author_category`(`id_author`, `id_category`) VALUES ('5','7');
 INSERT INTO `author_category`(`id_author`, `id_category`) VALUES ('6','8');
 INSERT INTO `author_category`(`id_author`, `id_category`) VALUES ('7','10');
 ```
+
 <!-- ```staff -->
+
 ```sql
 INSERT INTO `staff`(`id`, `fullname`, `gender`, `avatar`, `birthday`, `mobile`, `email`, `address`) VALUES ('1','Trần Văn A','Nam','link ảnh','1999-11-16','0123456789','ac@gmail.com','HN');
 INSERT INTO `staff`(`id`, `fullname`, `gender`, `avatar`, `birthday`, `mobile`, `email`, `address`) VALUES ('2','Nguyễn Minh B','Nam','link ảnh','2000-12-12','011223344','ad@gmail.com','Tp HCM');
@@ -241,6 +243,7 @@ INSERT INTO `staff`(`id`, `fullname`, `gender`, `avatar`, `birthday`, `mobile`, 
 ```
 
 <!-- staff-shift -->
+
 ```sql
 INSERT INTO `staff_shift`(`id_staff`, `id_shift`) VALUES ('1','1');
 INSERT INTO `staff_shift`(`id_staff`, `id_shift`) VALUES ('2','1');
@@ -250,8 +253,8 @@ INSERT INTO `staff_shift`(`id_staff`, `id_shift`) VALUES ('5','3');
 INSERT INTO `staff_shift`(`id_staff`, `id_shift`) VALUES ('6','4');
 ```
 
-
 <!-- titleOfBook -->
+
 ```sql
 INSERT INTO `titleOfBook`(`id`, `title`, `price`, `numberOfBook`) VALUES ('1','Hoàng tử ếch','200000','4');
 INSERT INTO `titleOfBook`(`id`, `title`, `price`, `numberOfBook`) VALUES ('2','Hàng xóm','150000','5');
@@ -261,6 +264,7 @@ INSERT INTO `titleOfBook`(`id`, `title`, `price`, `numberOfBook`) VALUES ('5','B
 ```
 
 <!-- book -->
+
 ```sql
 INSERT INTO `book`(`id`, `id_title`, `description`, `release_year`, `id_publishCompany`, `image`, `status`) VALUES ('1','1','Đây là một tác phẩm hay...','1945','1','link ảnh','còn sách');
 INSERT INTO `book`(`id`, `id_title`, `description`, `release_year`, `id_publishCompany`, `image`, `status`) VALUES ('2','2','Đây là một tác phẩm vui...','1969','3','link ảnh','còn sách');
@@ -275,6 +279,7 @@ INSERT INTO `book`(`id`, `id_title`, `description`, `release_year`, `id_publishC
 ```
 
 <!-- book-author -->
+
 ```sql
 INSERT INTO `book_author`(`id_book`, `id_author`) VALUES ('1','2');
 INSERT INTO `book_author`(`id_book`, `id_author`) VALUES ('2','1');
@@ -289,6 +294,7 @@ INSERT INTO `book_author`(`id_book`, `id_author`) VALUES ('10','4');
 ```
 
 <!-- book-category -->
+
 ```sql
 INSERT INTO `book_category`(`id_book`, `id_category`) VALUES ('1','2');
 INSERT INTO `book_category`(`id_book`, `id_category`) VALUES ('2','5');
@@ -300,6 +306,7 @@ INSERT INTO `book_category`(`id_book`, `id_category`) VALUES ('7','4');
 ```
 
 <!-- reader -->
+
 ```sql
 INSERT INTO `reader`(`id`, `fullname`, `gender`, `avatar`, `birthday`, `mobile`, `email`, `address`) VALUES ('1','Lê Thị M','Nữ','link ảnh','1999-12-12','135315146','aa@gmail.com','Hn');
 INSERT INTO `reader`(`id`, `fullname`, `gender`, `avatar`, `birthday`, `mobile`, `email`, `address`) VALUES ('2','Trần Văn V','Nam','link ảnh','2000-11-11','2354642','zz@gmail.com','Hp');
@@ -312,6 +319,7 @@ INSERT INTO `reader`(`id`, `fullname`, `gender`, `avatar`, `birthday`, `mobile`,
 ```
 
 <!-- borrow Sheet -->
+
 ```sql
 INSERT INTO `borrowSheet`(`id`, `id_reader`, `id_staff`, `borrow_date`, `return_date`) VALUES ('1','2','3','2021-02-21','2021-03-02');
 INSERT INTO `borrowSheet`(`id`, `id_reader`, `id_staff`, `borrow_date`, `return_date`) VALUES ('2','1','4','2021-02-21','2021-03-02');
@@ -322,8 +330,8 @@ INSERT INTO `borrowSheet`(`id`, `id_reader`, `id_staff`, `borrow_date`, `return_
 INSERT INTO `borrowSheet`(`id`, `id_reader`, `id_staff`, `borrow_date`, `return_date`) VALUES ('7','3','2','2021-02-22','2021-04-02');
 ```
 
-
 <!-- item borrow -->
+
 ```sql
 INSERT INTO `itemBorrow`(`id`, `id_borrow`, `id_book`) VALUES ('1','1','4');
 INSERT INTO `itemBorrow`(`id`, `id_borrow`, `id_book`) VALUES ('2','3','3');
@@ -335,6 +343,7 @@ INSERT INTO `itemBorrow`(`id`, `id_borrow`, `id_book`) VALUES ('7','7','5');
 ```
 
 <!-- return sheet -->
+
 ```sql
 INSERT INTO `returnSheet`(`id`, `id_borrow`, `id_staff`, `returning_date`) VALUES ('1','2','2','2022-02-20');
 INSERT INTO `returnSheet`(`id`, `id_borrow`, `id_staff`, `returning_date`) VALUES ('2','3','2','2022-02-20');
@@ -346,6 +355,7 @@ INSERT INTO `returnSheet`(`id`, `id_borrow`, `id_staff`, `returning_date`) VALUE
 ```
 
 <!-- item return -->
+
 ```sql
 INSERT INTO `itemReturn`(`id`, `id_return`, `id_itemBorrow`) VALUES ('1','1','3');
 INSERT INTO `itemReturn`(`id`, `id_return`, `id_itemBorrow`) VALUES ('2','2','2');
@@ -353,4 +363,4 @@ INSERT INTO `itemReturn`(`id`, `id_return`, `id_itemBorrow`) VALUES ('3','3','1'
 INSERT INTO `itemReturn`(`id`, `id_return`, `id_itemBorrow`) VALUES ('4','4','4');
 ```
 
-
+![library](https://user-images.githubusercontent.com/95067954/155089223-9a929b23-6135-4eb2-901c-b50c2fceb181.jpg)
